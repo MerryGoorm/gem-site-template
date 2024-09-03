@@ -1,0 +1,24 @@
+{
+	"name": "@gem-site-template/eslint-config",
+	"version": "0.0.0",
+	"private": true,
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint . --max-warnings 0",
+		"prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\""
+	},
+	"devDependencies": {
+		"@gem-site-template/typescript-config": "workspace:*",
+		"@typescript-eslint/eslint-plugin": "^8.4.0",
+		"@typescript-eslint/parser": "^8.4.0",
+		"eslint": "^8.57.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-jsx-a11y": "^6.9.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"eslint-plugin-react": "^7.35.1",
+		"eslint-plugin-react-hooks": "^4.6.2"
+	}
+}

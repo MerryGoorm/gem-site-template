@@ -1,0 +1,12 @@
+{
+	"name": "@gem-site-template/typescript-config",
+	"version": "0.0.0",
+	"private": true,
+	"files": [
+		"tsconfig.json",
+		"tsconfig.vite.json"
+	],
+	"scripts": {
+		"prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\""
+	}
+}

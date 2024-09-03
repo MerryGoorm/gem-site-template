@@ -1,0 +1,112 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Projects */
+    // "incremental": true,                              /* 프로젝트의 점진적 컴파일을 가능하게 하기 위해 .tsbuildinfo 파일을 저장합니다. 변경된 파일만 다시 빌드하므로 빌드 속도가 빨라집니다. */
+    // "composite": true,                                /* TypeScript 프로젝트가 프로젝트 참조와 함께 사용될 수 있도록 제약 조건을 활성화합니다. 대규모 프로젝트를 여러 작은 TypeScript 프로젝트로 나눌 때 유용합니다. */
+    // "tsBuildInfoFile": "./.tsbuildinfo",              /* 점진적 컴파일 파일(.tsbuildinfo)의 경로를 지정합니다. 이 파일은 프로젝트 상태에 대한 정보를 저장하여 이후 컴파일 속도를 높여줍니다. */
+    // "disableSourceOfProjectReferenceRedirect": true,  /* 컴포지트 프로젝트를 참조할 때 선언 파일 대신 소스 파일을 선호하는 것을 비활성화합니다. 기본적으로 TypeScript는 참조된 프로젝트의 소스 파일을 사용하지만, 이 플래그는 그 동작을 비활성화합니다. */
+    // "disableSolutionSearching": true,                 /* 편집 시 다중 프로젝트 참조 확인을 비활성화합니다. 이는 대형 프로젝트의 초기 로드 시간을 줄이는 데 유용합니다. */
+    // "disableReferencedProjectLoad": true,             /* TypeScript가 자동으로 로드하는 프로젝트 수를 줄입니다. 이는 매우 큰 프로젝트에서 편집기의 응답성을 향상하는 데 도움이 됩니다. */
+
+    /* Language and Environment */
+    "target": "ESNext" /* 출력되는 JavaScript의 언어 버전을 설정하고 호환 가능한 라이브러리 선언을 포함합니다. ES2016(ES7)을 타겟으로 하여 `async` 및 `await`와 같은 기능을 포함합니다. */,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ] /* 대상 런타임 환경을 설명하는 번들된 라이브러리 선언 파일 세트를 지정합니다. 기본적으로 대상에 대한 표준 라이브러리가 포함됩니다. - https://www.typescriptlang.org/tsconfig/#lib */,
+    "jsx": "react-jsx"                                 /* 생성되는 JSX 코드를 지정합니다. "preserve"는 JSX를 출력에 그대로 유지하여 다른 도구(Babel 등)에서 추가로 변환할 수 있도록 합니다. - https://www.typescriptlang.org/tsconfig/#jsx */,
+    // "experimentalDecorators": true,                   /* 실험적인 데코레이터 지원을 활성화합니다. Angular와 같이 데코레이터를 사용하는 프레임워크에서 유용합니다. - https://www.typescriptlang.org/tsconfig/#experimentalDecorators */
+    // "emitDecoratorMetadata": true,                    /* 소스 파일에서 데코레이터 선언에 대한 디자인 타입 메타데이터를 생성합니다. 종종 `experimentalDecorators`와 함께 사용됩니다. - https://www.typescriptlang.org/tsconfig/#emitDecoratorMetadata */
+    // "jsxFactory": "",                                 /* React JSX 출력을 대상으로 할 때 사용되는 JSX 팩토리 함수를 지정합니다. 예: 'React.createElement' 또는 'h'. React와 다른 방식으로 JSX를 사용하는 라이브러리를 사용할 때 필요합니다. - https://www.typescriptlang.org/tsconfig/#jsxFactory */
+    // "jsxFragmentFactory": "",                         /* React JSX 출력을 대상으로 할 때 프래그먼트에 사용되는 JSX 프래그먼트 참조를 지정합니다. 예: 'React.Fragment'. 프래그먼트의 경우 `jsxFactory`와 유사합니다. - https://www.typescriptlang.org/tsconfig/#jsxFragmentFactory */
+    // "jsxImportSource": "",                            /* 'jsx: react-jsx*'를 사용할 때 JSX 팩토리 함수를 가져오는 데 사용되는 모듈 지정자를 지정합니다. 새로운 JSX 변환기를 사용할 때 필요합니다. - https://www.typescriptlang.org/tsconfig/#jsxImportSource */
+    // "reactNamespace": "",                             /* 'createElement'를 위해 호출되는 객체를 지정합니다. 이는 'react' JSX 출력을 대상으로 할 때만 적용됩니다. - https://www.typescriptlang.org/tsconfig/#reactNamespace */
+    // "noLib": true,                                    /* 기본 lib.d.ts 파일을 포함한 모든 라이브러리 파일의 포함을 비활성화합니다. - https://www.typescriptlang.org/tsconfig/#noLib */
+    "useDefineForClassFields": true /* ECMAScript 표준을 준수하는 클래스 필드를 생성합니다. - https://www.typescriptlang.org/tsconfig/#useDefineForClassFields */,
+    // "moduleDetection": "auto",                        /* 모듈 형식 JS 파일을 감지하는 데 사용되는 방법을 제어합니다. - https://www.typescriptlang.org/tsconfig/#moduleDetection */
+
+    /* Modules */
+    "module": "ESNext" /* 생성되는 모듈 코드를 지정합니다. ESNext는 최신 ECMAScript 모듈 시스템을 사용합니다. - https://www.typescriptlang.org/tsconfig/#module */,
+    // "rootDir": "./" /* 소스 파일 내의 루트 폴더를 지정합니다. 소스 파일의 상위 디렉토리를 지정하여 모든 파일이 동일한 루트에서 컴파일되도록 합니다. - https://www.typescriptlang.org/tsconfig/#rootDir */,
+    "moduleResolution": "NodeNext" /* TypeScript가 특정 모듈 지정자에서 파일을 찾는 방법을 지정합니다. Node.js의 ES Module 및 CommonJS 모듈을 함께 사용할 수 있도록 설정합니다. - https://www.typescriptlang.org/tsconfig/#moduleResolution */,
+    // "baseUrl": "./" /* 상대적이지 않은 모듈 이름을 확인하려면 기본 디렉터리를 지정하세요. 일반적으로 `paths` 옵션과 함께 사용됩니다. - https://www.typescriptlang.org/tsconfig/#baseUrl */,
+    // "paths": {}                                       /* 가져오기를 추가 조회 위치로 다시 매핑하는 항목 집합을 지정합니다. 모듈 경로를 사용자 정의할 때 사용됩니다. - https://www.typescriptlang.org/tsconfig/#paths */,
+    // "rootDirs": [],                                   /* 여러 폴더를 하나로 취급하여 모듈을 확인할 수 있도록 합니다. - https://www.typescriptlang.org/tsconfig/#rootDirs */
+    // "typeRoots": [],                                  /* 기본적으로 모든 표시 가능한 "@types" 패키지가 컴파일에 포함됩니다. 이 옵션은 타입 정의 파일의 루트 디렉토리를 지정할 수 있습니다. - https://www.typescriptlang.org/tsconfig/#typeRoots */
+    // "types": [],                                      /* typeRoots와 동일하지만, 포함할 파일을 정확히 지정할 수 있습니다. 특정 타입 정의만 포함하고 싶을 때 사용됩니다. - https://www.typescriptlang.org/tsconfig/#types */
+    // "allowUmdGlobalAccess": true,                     /* 모듈에서 UMD 전역 액세스를 허용합니다. UMD 모듈을 전역 변수로 사용할 수 있도록 합니다. - https://www.typescriptlang.org/tsconfig/#allowUmdGlobalAccess */
+    // "moduleSuffixes": [],                             /* 모듈을 확인할 때 검색할 파일 이름 접미사의 기본 목록을 재정의하는 방법을 제공합니다. - https://www.typescriptlang.org/tsconfig/#moduleSuffixes */
+    "allowImportingTsExtensions": true /* TypeScript 파일이 .ts, .mts 또는 .tsx와 같은 TypeScript 관련 확장자를 사용하여 서로 가져올 수 있도록 허용합니다. '--moduleResolution bundler' 또는 '--noEmit' 또는 '--emitDeclarationOnly'가 같이 설정되어야 합니다. - https://www.typescriptlang.org/tsconfig/#allowImportingTsExtensions */,
+    // "resolvePackageJsonExports": true,                /* 패키지 가져오기를 해결할 때 package.json 'exports' 필드를 사용하세요. 이 옵션은 node16, nodenext 및 번들러 옵션에서 기본값이 true입니다. - https://www.typescriptlang.org/tsconfig/#resolvePackageJsonExports */
+    // "resolvePackageJsonImports": true,                /* 가져오기를 해결할 때 package.json 'imports' 필드를 사용하세요. - https://www.typescriptlang.org/tsconfig/#resolvePackageJsonImports */
+    // "customConditions": [],                           /* 가져오기를 해결할 때 기본 조건에 추가할 사용자 정의 조건을 설정합니다. - https://www.typescriptlang.org/tsconfig/#customConditions */
+    // "resolveJsonModule": true,                        /* JSON 모듈을 가져올 때 타입 검사를 수행할 수 있도록 합니다. - https://www.typescriptlang.org/tsconfig/#resolveJsonModule */
+    // "allowArbitraryExtensions": true,                 /* 선언 파일이 있는 경우 모든 확장자를 가진 파일 가져오기를 활성화합니다. - https://www.typescriptlang.org/tsconfig/#allowArbitraryExtensions */
+    // "noResolve": true,                                /* TypeScript가 프로젝트에 추가해야 하는 파일 수를 확장하는 'import', 'require' 또는 '<reference>'를 허용하지 않습니다. - https://www.typescriptlang.org/tsconfig/#noResolve */
+
+    /* JavaScript Support */
+    "allowJs": false /* JavaScript 파일이 프로그램의 일부가 될 수 있도록 허용합니다. 'checkJS' 옵션을 사용하여 이러한 파일에서 오류를 검사할 수 있습니다. - https://www.typescriptlang.org/tsconfig/#allowJs */,
+    // "checkJs": true,                                  /* 타입 검사가 적용된 JavaScript 파일에서 오류 보고를 활성화합니다. - https://www.typescriptlang.org/tsconfig/#checkJs */
+    // "maxNodeModuleJsDepth": 1,                        /* 'node_modules'의 JavaScript 파일을 검사할 때 사용되는 최대 폴더 깊이를 지정합니다. 'allowJs'와 함께 사용되는 경우에만 적용됩니다. - https://www.typescriptlang.org/tsconfig/#maxNodeModuleJsDepth */
+
+    /* Emit */
+    // "declaration": true,                              /* 프로젝트 내의 모든 TypeScript 또는 JavaScript 파일에 대한 '.d.ts' 파일을 생성합니다. - https://www.typescriptlang.org/tsconfig/#declaration */
+    // "declarationMap": true,                           /* '.d.ts' 파일에 대한 소스 매핑 파일을 생성합니다. - https://www.typescriptlang.org/tsconfig/#declarationMap */
+    // "emitDeclarationOnly": true,                      /* JavaScript 파일은 방출하지 않고 '.d.ts' 파일만 방출합니다. JavaScript 파일에 대해 다른 트랜스파일러를 사용할 때 유용합니다. - https://www.typescriptlang.org/tsconfig/#emitDeclarationOnly */
+    // "sourceMap": true,                                /* 출력된 JavaScript 파일에 대한 소스 맵 파일을 생성합니다. - https://www.typescriptlang.org/tsconfig/#sourceMap */
+    // "inlineSourceMap": true,                          /* 출력된 JavaScript 파일에 소스 맵 파일을 포함시킵니다. - https://www.typescriptlang.org/tsconfig/#inlineSourceMap */
+    // "outFile": "./",                                  /* 모든 출력을 하나의 JavaScript 파일로 번들하는 파일을 지정합니다. 'declaration'이 true이면 모든 '.d.ts' 출력을 번들하는 파일도 지정합니다. - https://www.typescriptlang.org/tsconfig/#outFile */
+    // "outDir": "./",                                   /* 출력된 모든 파일에 대한 출력 폴더를 지정합니다. - https://www.typescriptlang.org/tsconfig/#outDir */
+    // "removeComments": true,                           /* 주석을 제거하고 출력합니다. - https://www.typescriptlang.org/tsconfig/#removeComments */
+    // "noEmit": true                                    /* 컴파일에서 파일을 방출하지 않습니다. - https://www.typescriptlang.org/tsconfig/#noEmit */,
+    // "importHelpers": true,                            /* 각 파일에 포함하는 대신 프로젝트당 한 번만 tslib에서 헬퍼 함수를 가져올 수 있도록 합니다. - https://www.typescriptlang.org/tsconfig/#importHelpers */
+    // "downlevelIteration": true,                       /* 최신 JavaScript 반복 개념을 이전 JavaScript 런타임에서 보다 정확하게 구현할 수 있도록 지원합니다. - https://www.typescriptlang.org/tsconfig/#downlevelIteration */
+    // "sourceRoot": "",                                 /* 디버거가 참조 소스 코드를 찾을 수 있도록 루트 경로를 지정합니다. - https://www.typescriptlang.org/tsconfig/#sourceRoot */
+    // "mapRoot": "",                                    /* 디버거가 소스 맵 파일을 생성된 위치 대신 찾을 위치를 지정합니다. - https://www.typescriptlang.org/tsconfig/#mapRoot */
+    // "inlineSources": true,                            /* 출력된 JavaScript 파일에 소스 코드를 포함시킵니다. - https://www.typescriptlang.org/tsconfig/#inlineSources */
+    // "emitBOM": true,                                  /* TypeScript가 출력 파일을 쓸 때 바이트 순서 표시(BOM)를 방출할지 여부를 제어합니다. - https://www.typescriptlang.org/tsconfig/#emitBOM */
+    // "newLine": "crlf",                                /* 파일을 출력할 때 줄 바꿈 문자를 설정합니다. - https://www.typescriptlang.org/tsconfig/#newLine */
+    // "stripInternal": true,                            /* JSDoc 주석에 '@internal'이 있는 선언을 방출하지 않도록 비활성화합니다. - https://www.typescriptlang.org/tsconfig/#stripInternal */
+    // "noEmitHelpers": true,                            /* 컴파일된 출력에서 '__extends'와 같은 사용자 정의 헬퍼 함수를 생성하지 않도록 합니다. - https://www.typescriptlang.org/tsconfig/#noEmitHelpers */
+    // "noEmitOnError": true,                            /* 타입 검사 오류가 보고되면 파일을 방출하지 않도록 합니다. - https://www.typescriptlang.org/tsconfig/#noEmitOnError */
+    // "preserveConstEnums": true,                       /* 생성된 코드에서 'const enum' 선언을 지우지 않도록 비활성화합니다. - https://www.typescriptlang.org/tsconfig/#preserveConstEnums */
+    // "declarationDir": "./",                           /* 선언 파일이 출력되는 루트 디렉토리를 지정합니다. - https://www.typescriptlang.org/tsconfig/#declarationDir */
+
+    /* Interop Constraints */
+    "isolatedModules": true /* 각 파일이 다른 가져오기에 의존하지 않고 안전하게 트랜스파일될 수 있도록 합니다. - https://www.typescriptlang.org/tsconfig/#isolatedModules */,
+    // "verbatimModuleSyntax": true,                     /* 타입 전용으로 표시되지 않은 가져오기 또는 내보내기를 변환하거나 제거하지 않으며, 'module' 설정에 기반하여 출력 파일 형식에 맞게 작성되도록 합니다. - https://www.typescriptlang.org/tsconfig/#verbatimModuleSyntax */
+    // "isolatedDeclarations": true,                     /* 내보내기에 충분한 주석을 요구하여 다른 도구가 선언 파일을 쉽게 생성할 수 있도록 합니다. - https://www.typescriptlang.org/tsconfig/#isolatedDeclarations */
+    // "allowSyntheticDefaultImports": true,             /* 모듈에 기본 내보내기가 없는 경우 'import x from y'를 허용합니다. - https://www.typescriptlang.org/tsconfig/#allowSyntheticDefaultImports */
+    "esModuleInterop": true /* CommonJS 모듈을 가져올 때 호환성을 쉽게 지원하기 위해 추가 JavaScript를 생성합니다. 이는 타입 호환성을 위해 'allowSyntheticDefaultImports'를 활성화합니다. - https://www.typescriptlang.org/tsconfig/#esModuleInterop */,
+    // "preserveSymlinks": true,                         /* 심볼릭 링크를 실제 경로로 해석하는 것을 비활성화합니다. 이는 Node의 동일한 플래그와 연관됩니다. - https://www.typescriptlang.org/tsconfig/#preserveSymlinks */
+    "forceConsistentCasingInFileNames": true /* 가져오기에 대소문자가 일관되도록 보장합니다. 대소문자가 다른 파일 이름을 사용할 때 발생할 수 있는 문제를 방지합니다. - https://www.typescriptlang.org/tsconfig/#forceConsistentCasingInFileNames */,
+
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+    "noImplicitAny": true /* 'any' 유형이 암시적으로 포함된 표현식 및 선언에 대한 오류 보고를 활성화합니다. - https://www.typescriptlang.org/tsconfig/#noImplicitAny */,
+    "strictNullChecks": true /* 유형을 확인할 때 'null' 및 'undefine'을 고려 - https://www.typescriptlang.org/tsconfig/#strictNullChecks */,
+    "strictFunctionTypes": true /* 이 플래그를 활성화하면 함수 매개변수가 더 정확하게 검사됩니다. - https://www.typescriptlang.org/tsconfig/#strictFunctionTypes */,
+    // "strictBindCallApply": true,                      /* call설정된 경우 TypeScript는 , bind, 함수의 내장 메서드 가 apply기본 함수에 대한 올바른 인수로 호출되는지 확인합니다. - https://www.typescriptlang.org/tsconfig/#noUnusedParameters */
+    // "strictPropertyInitialization": true,             /* true로 설정하면 클래스 속성이 선언되었지만 생성자에서 설정되지 않은 경우 TypeScript에서 오류가 발생합니다. - https://www.typescriptlang.org/tsconfig/#strictPropertyInitialization */
+    // "noImplicitThis": true,                           /* 'this'에 'any' 유형이 지정되면 오류 보고를 활성화합니다. - https://www.typescriptlang.org/tsconfig/#noImplicitThis */
+    // "useUnknownInCatchVariables": true,               /* TypeScript 4.0에서는 catch 절에서 변수의 유형을 'any'에서 'unknown' 로 변경할 수 있는 지원이 추가되었습니다. - https://www.typescriptlang.org/tsconfig/#useUnknownInCatchVariables */
+    "alwaysStrict": true /* 항상 엄격 모드로 검사 - https://www.typescriptlang.org/tsconfig/#alwaysStrict */,
+    "noUnusedLocals": true /* 사용되지 않는 지역 변수에 대한 오류를 보고합니다. - https://www.typescriptlang.org/tsconfig/#noUnusedLocals */,
+    "noUnusedParameters": true /* 함수에서 사용되지 않는 매개변수에 대한 오류를 보고합니다. - https://www.typescriptlang.org/tsconfig/#noUnusedParameters */,
+    // "exactOptionalPropertyTypes": true,               /* 'undefined'를 추가하는 대신 선택적 속성 유형을 작성된 대로 해석합니다. - https://www.typescriptlang.org/tsconfig/#exactOptionalPropertyTypes */
+    "noImplicitReturns": true /* 함수에서 명시적으로 반환되지 않는 코드 경로에 대한 오류 보고를 활성화합니다. - https://www.typescriptlang.org/tsconfig/#noImplicitReturns */,
+    "noFallthroughCasesInSwitch": true /* switch 문에서 fallthrough 사례에 대한 오류 보고를 활성화합니다. - https://www.typescriptlang.org/tsconfig/#noFallthroughCasesInSwitch */,
+    // "noUncheckedIndexedAccess": true,                 /*인덱스를 사용하여 액세스할 때 유형에 '정의되지 않음'을 추가합니다. - https://www.typescriptlang.org/tsconfig/#noUncheckedIndexedAccess */
+    // "noImplicitOverride": true,                       /* 파생 클래스의 재정의 멤버가 재정의 한정자로 표시되어 있는지 확인 - https://www.typescriptlang.org/tsconfig/#noImplicitOverride */
+    // "noPropertyAccessFromIndexSignature": true,       /* 인덱싱된 유형을 사용하여 선언된 키에 대해 인덱싱된 접근자를 사용하도록 적용합니다. - https://www.typescriptlang.org/tsconfig/#noPropertyAccessFromIndexSignature */
+    // "allowUnusedLabels": true,                        /* 사용하지 않는 라벨 허용 - https://www.typescriptlang.org/tsconfig/#allowUnusedLabels */
+    // "allowUnreachableCode": true                      /* 도달할 수 없는 코드 허용  - https://www.typescriptlang.org/tsconfig/#allowUnreachableCode*/,
+
+    /* Completeness */
+    // "skipDefaultLibCheck": true,                      /* 기본 라이브러리 선언 파일의 유형 검사를 건너뜁니다. - https://www.typescriptlang.org/tsconfig/#skipDefaultLibCheck */
+    "skipLibCheck": true /*정의 파일의 타입 확인을 건너 뛸 지 여부 - https://www.typescriptlang.org/tsconfig/#skipLibCheck */
+  }
+}

@@ -1,0 +1,24 @@
+{
+	"name": "gem-site-template",
+	"private": true,
+	"scripts": {
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"lint": "turbo lint",
+		"prettier": "turbo prettier",
+		"clean": "pnpm -r exec pnpm dlx rimraf node_modules && pnpm dlx rimraf node_modules && pnpm dlx rimraf .turbo && pnpm -r exec pnpm dlx rimraf .turbo && pnpm dlx rimraf pnpm-lock.yaml"
+	},
+	"devDependencies": {
+		"prettier": "^3.3.3",
+		"turbo": "^2.1.0",
+		"typescript": "^5.4.5"
+	},
+	"eslintConfig": {
+		"extends": "@gem-site-template/eslint-config"
+	},
+	"prettier": "@gem-site-template/prettier-config",
+	"packageManager": "pnpm@8.15.6",
+	"engines": {
+		"node": ">=18"
+	}
+}
